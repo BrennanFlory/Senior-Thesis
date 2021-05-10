@@ -20,8 +20,9 @@
     <link href="../assets/css/table.css" rel="stylesheet">
     <link href="../assets/css/3-col-portfolio.css" rel="stylesheet">
 
-    <script src="../assets/css/table.js"></script>
+    <script type="text/javascript" src="../assets/css/table.js"></script>
     <script type="text/javascript" src="../assets/js/index.js"></script>
+    <script type="text/javascript" src="../assets/js/search.js"></script>
 
     <style>
         #container {
@@ -58,7 +59,7 @@
                     <th style="width:20%;">Guide No.</th>
                     <th style="width:60%;">Name of Material</th>
                 </tr>
-                <tr>
+                <tr class="custom-clickable-row" id="view-pdf-btn " onclick="previewFile() " ; margin: 100px 0 0 80px; " disabled>
                     <td>-----</td>
                     <td>117</td>
                     <td>AC</td>
@@ -84,7 +85,7 @@
 
 </body>
 <script>
-    var video = document.querySelector("#videoElement");
+    var video = document.querySelector("#videoElement ");
 
     if (navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({
@@ -94,7 +95,7 @@
                 video.srcObject = stream;
             })
             .catch(function(err0r) {
-                console.log("Something went wrong!");
+                console.log("Something went wrong! ");
             });
     }
 
@@ -108,26 +109,6 @@
         }
 
         video.srcObject = null;
-    }
-</script>
-<script>
-    function search() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
     }
 </script>
 

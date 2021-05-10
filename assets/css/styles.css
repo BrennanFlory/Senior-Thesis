@@ -206,3 +206,7 @@ body {
         width: 100%;
     }
 }
+
+.custom-clickable-row {
+    cursor: pointer;
+}
