@@ -17,7 +17,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/table.css" rel="stylesheet">
     <link href="../assets/css/3-col-portfolio.css" rel="stylesheet">
+
+    <script src="../assets/css/table.js"></script>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
 
     <style>
         #container {
@@ -36,11 +40,46 @@
 </head>
 
 <body>
-    <div id="main-wrapper">
-        <video autoplay="true" id="videoElement">
+    <div class="row">
+        <div class="column">
+            <video autoplay="true" id="videoElement">
 
         </video>
-        <embed src="../EMR/Split/EMR2020_Orange_Pages.pdf" width="500" height="375" type="application/pdf">
+        </div>
+        <div class="column">
+            <button type="button" id="view-pdf-btn" onclick="previewFile()" style="cursor: pointer; width: 120px; padding: 10px; font-family: 'Arial'; font-size: 15px; color: #ededed; border-radius: 5px; border: 1px #404040; background-color:#1473e6; margin: 100px 0 0 80px;"
+                disabled>View PDF</button>
+            <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for Placards">
+
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:20%;">ID No.</th>
+                    <th style="width:20%;">Guide No.</th>
+                    <th style="width:60%;">Name of Material</th>
+                </tr>
+                <tr>
+                    <td>-----</td>
+                    <td>117</td>
+                    <td>AC</td>
+                </tr>
+                <tr>
+                    <td>-----</td>
+                    <td>154</td>
+                    <td>Adamsite</td>
+                </tr>
+                <tr>
+                    <td>-----</td>
+                    <td>112</td>
+                    <td>Ammonium nitrate-fuel oil mixtures</td>
+                </tr>
+                <tr>
+                    <td>-----</td>
+                    <td>158</td>
+                    <td>Biological agents</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 </body>
@@ -69,6 +108,26 @@
         }
 
         video.srcObject = null;
+    }
+</script>
+<script>
+    function search() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
     }
 </script>
 
