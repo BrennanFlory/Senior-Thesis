@@ -18,13 +18,58 @@
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/styles.css" rel="stylesheet">
     <link href="../assets/css/3-col-portfolio.css" rel="stylesheet">
+
+    <style>
+        #container {
+            margin: 0px auto;
+            width: 500px;
+            height: 375px;
+            border: 10px #333 solid;
+        }
+        
+        #videoElement {
+            width: 500px;
+            height: 375px;
+            background-color: #666;
+        }
+    </style>
 </head>
 
 <body>
     <div id="main-wrapper">
+        <video autoplay="true" id="videoElement">
+
+        </video>
         <embed src="../EMR/Split/EMR2020_Orange_Pages.pdf" width="500" height="375" type="application/pdf">
     </div>
 
 </body>
+<script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({
+                video: true
+            })
+            .then(function(stream) {
+                video.srcObject = stream;
+            })
+            .catch(function(err0r) {
+                console.log("Something went wrong!");
+            });
+    }
+
+    function stop(e) {
+        var stream = video.srcObject;
+        var tracks = stream.getTracks();
+
+        for (var i = 0; i < tracks.length; i++) {
+            var track = tracks[i];
+            track.stop();
+        }
+
+        video.srcObject = null;
+    }
+</script>
 
 </html>
