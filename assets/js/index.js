@@ -1,5 +1,7 @@
 const viewerConfig = {
-    embedMode: "LIGHT_BOX"
+    embedMode: "LIGHT_BOX",
+    defaultViewMode: "FIT_PAGE",
+    dockPageControls: true
 };
 
 document.addEventListener("adobe_dc_view_sdk.ready", function() {
