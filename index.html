@@ -27,14 +27,14 @@
     <style>
         #container {
             margin: 0px auto;
-            width: 500px;
-            height: 375px;
+            width: 100%;
+            height: 100%;
             border: 10px #333 solid;
         }
         
         #videoElement {
-            width: 500px;
-            height: 375px;
+            width: 100%;
+            height: 100%;
             background-color: #666;
         }
     </style>
@@ -42,55 +42,66 @@
 
 <body>
     <div class="row">
-        <div class="column">
+        <div class="column" style="max-width: 20%;">
             <video autoplay="true" id="videoElement">
 
         </video>
         </div>
-        <div class="column">
+        <div class="column" style="max-width: 80%;">
             <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
             <input type="text" id="myInput" onkeyup="search()" placeholder="Search for Placards">
 
             <table id="myTable">
-                <tr class="header">
-                    <th style="width:10%;">ID No.</th>
-                    <th style="width:10%;">Guide No.</th>
-                    <th style="width:60%;">Name of Material</th>
-                    <th style="width:10%;">Orange Guide</th>
-                    <th style="width:10%;">Green Guide</th>
-                </tr>
                 <tBody>
-                    <tr>
-                        <td style="width:10%; ">-----</td>
-                        <td style="width:10%; ">112</td>
-                        <td style="width:60%; ">Ammonium nitrate-fuel oil mixtures</td>
-                        <td style="width:10%; " class="custom-clickable-row " id="view-pdf-btn " onclick="preview112() " ; margin: 100px 0 0 80px; " disabled>Orange Guide</td>
-                        <td style="width:10%; " class="custom-clickable-row " id="view-pdf-btn " onclick="preview117() " ; margin: 100px 0 0 80px; " disabled>Green Guide</td>
+                    <tr class="header">
+                        <th style="width: 10%"> ID No.</th>
+                        <th style="width: 10%">Guide No.</th>
+                        <th style="width: 60%">Name of Material</th>
+                        <th style="width: 10%">Orange Guide</th>
+                        <th style="width: 10%">Green Guide</th>
                     </tr>
-                    <tr class="custom-clickable-row " id="view-pdf-btn " onclick="preview112() " ; margin: 100px 0 0 80px; " disabled>
-                            <td>-----</td>
-                            <td>112</td>
-                            <td>Blasting agent, n.o.s.</td>
+
+                    <tr class="custom-clickable-row " id="view-pdf-btn " onclick="previewO112() " ; " disabled>
+                        <td>-----</td>
+                        <td>112</td>
+                        <td>Ammonium nitrate-fuel oil mixtures</td>
+                        <td>Orange Guide</td>
+                        <td>NA</td>
+                    </tr>
+                    <tr class="custom-clickable-row " id="view-pdf-btn " onclick="previewO112() " ; " disabled>
+                        <td>-----</td>
+                        <td>112</td>
+                        <td>Blasting agent, n.o.s.</td>
+                        <td>Orange Guide</td>
+                        <td>NA</td>
                     </tr>
                     <tr class="custom-clickable-row " id="view-pdf-btn " onclick="preview112() " ; margin: 100px 0 0 80px; " disabled>
                         <td>-----</td>
                         <td>112</td>
                         <td>Explosives, division 1.1, 1.2, 1.3 or 1.5</td>
+                        <td>Orange Guide</td>
+                        <td>NA</td>
                     </tr>
                     <tr class="custom-clickable-row " id="view-pdf-btn " onclick="preview113() " ; margin: 100px 0 0 80px; " disabled>
                         <td>1310</td>
                         <td>113</td>
                         <td>Ammonium picrate, wetted with not less than 10% water</td>
+                        <td>Orange Guide</td>
+                        <td>NA</td>
                     </tr>
                     <tr class="custom-clickable-row " id="view-pdf-btn " onclick="preview113() " ; margin: 100px 0 0 80px; " disabled>
                         <td>1320</td>
                         <td>113</td>
                         <td>Dinitrophenol, wetted with not less than 15% water</td>
+                        <td>Orange Guide</td>
+                        <td>NA</td>
                     </tr>
                     <tr class="custom-clickable-row " id="view-pdf-btn " onclick="preview113() " ; margin: 100px 0 0 80px; " disabled>
                         <td>1321</td>
                         <td>113</td>
                         <td>Dinitrophenolates, wetted with not less than 15% water</td>
+                        <td>Orange Guide</td>
+                        <td>NA</td>
                     </tr>
                     <tr class="custom-clickable-row " id="view-pdf-btn " onclick="preview113() " ; margin: 100px 0 0 80px; " disabled>
                         <td>1322</td>
