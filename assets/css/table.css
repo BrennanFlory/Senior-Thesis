@@ -28,9 +28,16 @@
     /* Increase font-size */
 }
 
-#myTable th,
-#myTable td {
+#myTable th {
     cursor: pointer;
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    border: 1px solid;
+    /* Add padding */
+}
+
+#myTable td {
     text-align: left;
     /* Left-align text */
     padding: 12px;
