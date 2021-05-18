@@ -110,6 +110,23 @@ function preview116() {
     }, viewerConfig);
 };
 
+function preview116P() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/116P/EMR2020_116P.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_116P"
+        }
+    }, viewerConfig);
+};
+
 function preview117() {
     var adobeDCView = new AdobeDC.View({
         clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
@@ -157,6 +174,159 @@ function previewG117() {
         },
         metaData: {
             fileName: "EMR2020_G117"
+        }
+    }, viewerConfig);
+};
+
+function preview117P() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/117P/EMR2020_117P.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_117P"
+        }
+    }, viewerConfig);
+};
+
+function previewO117P() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/117P/EMR2020_O117P.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_O117P"
+        }
+    }, viewerConfig);
+};
+
+function previewG117P() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/117P/EMR2020_G117P.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_G117P"
+        }
+    }, viewerConfig);
+};
+
+function preview118() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/118/EMR2020_118.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_118"
+        }
+    }, viewerConfig);
+};
+
+function previewO118() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/118/EMR2020_O118.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_O118"
+        }
+    }, viewerConfig);
+};
+
+function previewG118() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/118/EMR2020_G118.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_G118"
+        }
+    }, viewerConfig);
+};
+
+function preview119() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/119/EMR2020_119.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_119"
+        }
+    }, viewerConfig);
+};
+
+function previewO119() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/119/EMR2020_O119.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_O119"
+        }
+    }, viewerConfig);
+};
+
+function previewG119() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/119/EMR2020_G119.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_G119"
         }
     }, viewerConfig);
 };
