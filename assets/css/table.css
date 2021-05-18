@@ -30,6 +30,7 @@
 
 #myTable th,
 #myTable td {
+    cursor: pointer;
     text-align: left;
     /* Left-align text */
     padding: 12px;
@@ -66,7 +67,7 @@ input {
 tBody {
     overflow-y: auto;
     display: block;
-    max-height: 720px;
+    max-height: 800px;
 }
 
 .custom-clickable-row {

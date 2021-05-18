@@ -32,9 +32,3 @@ function search() {
         }
     }
 }
-
-$(document).on('click', '.custom-clickable-row', function(e) {
-    var url = $(this).data('href');
-
-    window.location = url;
-});

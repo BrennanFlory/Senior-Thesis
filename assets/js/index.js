@@ -127,6 +127,40 @@ function preview117() {
     }, viewerConfig);
 };
 
+function previewO117() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/117/EMR2020_O117.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_O117"
+        }
+    }, viewerConfig);
+};
+
+function previewG117() {
+    var adobeDCView = new AdobeDC.View({
+        clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
+    });
+
+    adobeDCView.previewFile({
+        content: {
+            location: {
+                url: "../../EMR/html/117/EMR2020_G117.pdf",
+            },
+        },
+        metaData: {
+            fileName: "EMR2020_G117"
+        }
+    }, viewerConfig);
+};
+
 function preview154() {
     var adobeDCView = new AdobeDC.View({
         clientId: "33f2379e58524e4fbbd8093b6c2b6ceb"
