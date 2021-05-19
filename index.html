@@ -1626,7 +1626,7 @@
                         <td class="custom-clickable-row " id="view-pdf-btn " onclick="preview119() " ; margin: 100px 0 0 80px; " disabled>3309</td>
                         <td class="custom-clickable-row " id="view-pdf-btn " onclick="preview119() " ; margin: 100px 0 0 80px; " disabled>119</td>
                         <td class="custom-clickable-row " id="view-pdf-btn " onclick="preview119() " ; margin: 100px 0 0 80px; " disabled>Liquefied gas, poisonous, flammable, corrosive, n.o.s. (Inhalation Hazard Zone C)</td>
-                        <td class="custom-clickable-row " id="view-pdf-btn " onclick="previewO119() " ; margin: 100px 0 0 80px; " disabled>Orange Guide</td>S
+                        <td class="custom-clickable-row " id="view-pdf-btn " onclick="previewO119() " ; margin: 100px 0 0 80px; " disabled>Orange Guide</td>
                         <td class="custom-clickable-row " id="view-pdf-btn " onclick="previewG119() " ; margin: 100px 0 0 80px; " disabled>Green Guide</td>
                     </tr>
                     <tr>
@@ -1814,8 +1814,8 @@
             rows = table.rows;
             for (i = 1; i < (rows.length - 1); i++) {
                 shouldSwitch = false;
-                x = rows[i].getElementsByTagName("TD ")[n];
-                y = rows[i + 1].getElementsByTagName("TD ")[n];
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
                 if (dir == "asc ") {
                     if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                         shouldSwitch = true;
