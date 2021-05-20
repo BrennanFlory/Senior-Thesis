@@ -17,66 +17,11 @@
     /* Add some space below the input */
 }
 
-#myTable {
-    border-collapse: collapse;
-    /* Collapse borders */
-    width: 100%;
-    /* Full-width */
-    border: 1px solid rgb(29, 29, 29);
-    /* Add a grey border */
-    font-size: 18px;
-    /* Increase font-size */
-}
-
-#myTable th {
-    cursor: pointer;
-    text-align: left;
-    /* Left-align text */
-    padding: 12px;
-    border: 1px solid;
-    /* Add padding */
-}
-
-#myTable td {
-    text-align: left;
-    /* Left-align text */
-    padding: 12px;
-    border: 1px solid;
-    /* Add padding */
-}
-
-#myTable tr {
-    /* Add a bottom border to all table rows */
-    border: 1px solid;
-    border-left: 1px solid;
-    border-right: 1px solid;
-}
-
-#myTable tr.header,
-#myTable tr:hover {
-    /* Add a grey background color to the table header and on hover */
-    background-color: #000;
-}
-
-tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-tr:nth-child(odd) {
-    background-color: rgba(53, 53, 53, 0.75);
-}
-
 input {
     background-color: #000;
     color: #fffad5;
 }
 
-tBody {
-    overflow-y: auto;
-    display: block;
-    max-height: 800px;
-}
-
-.custom-clickable-row {
-    cursor: pointer;
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE"
 }
